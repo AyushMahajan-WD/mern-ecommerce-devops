@@ -1,0 +1,35 @@
+#Installing modules for frontend
+FROM node:20-slim 
+
+WORKDIR /frontend
+
+COPY frontend/package*.json .
+
+RUN npm install
+
+COPY frontend .
+
+RUN npm run build
+
+#Installing modules for backend.
+FROM node:20-slim
+
+WORKDIR /backend
+
+COPY backend/package*.json .
+
+RUN npm install
+
+COPY backend .
+
+#Combining backend and frontend  
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY --from=1 /backend .
+COPY --from=0 frontend/dist ./frontend/dist
+
+EXPOSE 5000
+
+CMD ["npm", "start"]
