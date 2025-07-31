@@ -1,4 +1,4 @@
-<h>****The app source code is cloned from from https://github.com/burakorkmez/mern-ecommerce.git****<h>
+<h3>****The app source code is cloned from from https://github.com/burakorkmez/mern-ecommerce.git****<h3>
 
 This is a full-featured **E-commerce application** built using the **MERN stack (MongoDB, Express, React, Node.js)**.
 The project includes authentication, product management, shopping cart, payments, and more.
@@ -52,5 +52,5 @@ In frontend,
 
 After changes run "docker compose up"
 
-<h>For Production use Dockerfile.prod and docker-compose-prod.yml</h>  
+<h2>For Production use Dockerfile.prod and docker-compose-prod.yml</h2>  
 For prod,Ignore frontend .env and for real deployment use real TOKENS and KEYS 
