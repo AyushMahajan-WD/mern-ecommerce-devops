@@ -1,4 +1,4 @@
-<h3>****The app source code is cloned from from https://github.com/burakorkmez/mern-ecommerce.git****<h3>
+<h3>****The app source code is cloned from from https://github.com/burakorkmez/mern-ecommerce.git ****<h3>
 
 This is a full-featured **E-commerce application** built using the **MERN stack (MongoDB, Express, React, Node.js)**.
 The project includes authentication, product management, shopping cart, payments, and more.
